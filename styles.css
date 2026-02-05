@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button {
+  background-color: #ff6f6f;
+  border: none;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  animation: buttonAnimation 0.3s linear infinite;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#score, #clicks, #resets, #highScore {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ff6f6f;
+}
+
+#scoreValue, #clicksValue, #resetsValue, #highScoreValue {
+  font-weight: bold;
+}
